@@ -2,10 +2,12 @@
 #include <vector>
 
 template<typename T>
+//concept container = requires(T c)
 concept container = requires(T& c)
 {
 //	c.begin();
 //	c.end();
+
 	std::begin(c);
 	std::end(c);
 };

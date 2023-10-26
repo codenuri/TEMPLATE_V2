@@ -1,12 +1,12 @@
 #include <print>
 #include <type_traits>
 
-void f1(int c[3])
+void f1( int c[3] )
 {
 	std::println("{}", typeid(c).name() );
 }
 
-void f2(int(&c)[3])
+void f2( int (&c)[3] )
 {
 	std::println("{}", typeid(c).name() );
 }
